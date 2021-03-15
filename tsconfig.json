@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5", // TSはECMAScript 5に変換
+    "module": "ES2015", // TSのモジュールはES Modulesとして出力
+    "lib": ["es6","dom"],
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./node_modules/phaser/types",
+      "./src/@types",
+    ],
+    "types": [
+      "Phaser"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": [
+        "*"
+      ],
+    }
+  },
+}
